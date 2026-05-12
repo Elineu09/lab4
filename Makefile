@@ -10,5 +10,6 @@ sendReceive4: sendReceive4.c
 challenge: challenge.c
 	mpicc challenge.c -o challenge
 
-clean: 
-	rm -f sendReceive 
+clean:
+	rm -f sendReceive sendReceive3 sendReceive4 challenge
+
