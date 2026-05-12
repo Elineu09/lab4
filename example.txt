@@ -1,0 +1,12 @@
+mpirun -np 4 ./sendReceive 1000
+mpirun --use-hwthread-cpus -np 8 ./sendReceive 1000
+
+mpirun -np 4 ./sendReceive3 1000 1024
+mpirun --use-hwthread-cpus -np 8 ./sendReceive3 1000 1024
+
+
+mpirun -np 4 ./sendReceive4
+mpirun --use-hwthread-cpus -np 8 ./sendReceive4
+
+mpirun -np 4 ./challenge
+mpirun --use-hwthread-cpus -np 8 ./challenge
